@@ -5,7 +5,7 @@ Version:	0.2
 Release:	1
 License:	GPL
 Group:		Applications/Multimedia
-Source0:	http://dl.sourceforge.net/sourceforge/%{name}/%{name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/gkaraoke/%{name}-%{version}.tar.gz
 # Source0-md5:	f582394e133cb4bcccea291b6fcf73ae
 URL:		http://gkaraoke.sourceforge.net/
 BuildRequires:	autoconf
@@ -20,7 +20,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 A Karaoke simulator for the GNOME environment.
 
 %description -l pl
-Symulator karaoke dla GNOME
+Symulator karaoke dla ¶rodowiska GNOME.
 
 %prep
 %setup -q
@@ -53,6 +53,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog NEWS README TODO
 %attr(755,root,root) %{_bindir}/%{name}
-%{_datadir}/gkaraoke/*
+%{_datadir}/gkaraoke
 %{_desktopdir}/%{name}.desktop
-%{_pixmapsdir}/%{name}/%{name}_icon.png
+%{_pixmapsdir}/%{name}
