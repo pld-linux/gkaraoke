@@ -42,7 +42,7 @@ sed  's/^\(mkinstalldirs = .*\)$/mkinstalldirs = $\(MKINSTALLDIRS\)/' po/Makefil
 %{__make} install \
         DESTDIR=$RPM_BUILD_ROOT
 
-mv $RPM_BUILD_ROOT%{_applnkdir}/Applications/%{name}.desktop $RPM_BUILD_ROOT%{_desktopdir}/%{name}.desktop
+mv $RPM_BUILD_ROOT/usr/share/gnome/apps/Applications/%{name}.desktop $RPM_BUILD_ROOT%{_desktopdir}/%{name}.desktop
 
 %clean
 rm -rf $RPM_BUILD_ROOT
