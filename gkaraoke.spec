@@ -42,7 +42,7 @@ sed  's/^\(mkinstalldirs = .*\)$/mkinstalldirs = $\(MKINSTALLDIRS\)/' po/Makefil
 %{__make} install \
         DESTDIR=$RPM_BUILD_ROOT
 
-mv $RPM_BUILD_ROOT/usr/share/gnome/apps/Applications/%{name}.desktop $RPM_BUILD_ROOT%{_desktopdir}/%{name}.desktop
+mv $RPM_BUILD_ROOT%{_applnkdir}/Applications/%{name}.desktop $RPM_BUILD_ROOT%{_desktopdir}/%{name}.desktop
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -51,6 +51,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog NEWS README TODO
 %attr(755,root,root) %{_bindir}/%{name}
-/usr/share/gkaraoke/*
+%{_datadir}/gkaraoke/*
 %{_desktopdir}/%{name}.desktop
 %{_pixmapsdir}/%{name}/%{name}_icon.png
