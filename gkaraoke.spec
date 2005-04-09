@@ -2,7 +2,7 @@ Summary:	GNOME Karaoke simulator
 Summary(pl):	Symulator Karaoke dla GNOME
 Name:		gkaraoke
 Version:	0.2
-Release:	3
+Release:	4
 License:	GPL
 Group:		Applications/Multimedia
 Source0:	http://dl.sourceforge.net/gkaraoke/%{name}-%{version}.tar.gz
@@ -26,6 +26,7 @@ Symulator karaoke dla ¶rodowiska GNOME.
 %setup -q
 
 %build
+%{__libtoolize}
 %{__aclocal}
 %{__autoconf}
 %{__automake}
