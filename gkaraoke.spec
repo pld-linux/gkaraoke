@@ -10,9 +10,11 @@ Source0:	http://dl.sourceforge.net/gkaraoke/%{name}-%{version}.tar.gz
 URL:		http://gkaraoke.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
+BuildRequires:	gettext-devel
 BuildRequires:	libgnomeui-devel >= 2.0
 BuildRequires:	libtool
 BuildRequires:	libunicode-devel
+BuildRequires:	pkgconfig
 Requires:	TiMidity++
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
