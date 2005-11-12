@@ -4,7 +4,7 @@ Name:		gkaraoke
 Version:	0.2
 Release:	4
 License:	GPL
-Group:		Applications/Multimedia
+Group:		X11/Applications/Multimedia
 Source0:	http://dl.sourceforge.net/gkaraoke/%{name}-%{version}.tar.gz
 # Source0-md5:	f582394e133cb4bcccea291b6fcf73ae
 URL:		http://gkaraoke.sourceforge.net/
