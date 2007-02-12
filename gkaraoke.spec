@@ -1,5 +1,5 @@
 Summary:	GNOME Karaoke simulator
-Summary(pl):	Symulator Karaoke dla GNOME
+Summary(pl.UTF-8):   Symulator Karaoke dla GNOME
 Name:		gkaraoke
 Version:	0.2
 Release:	4
@@ -21,8 +21,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 A Karaoke simulator for the GNOME environment.
 
-%description -l pl
-Symulator karaoke dla ¶rodowiska GNOME.
+%description -l pl.UTF-8
+Symulator karaoke dla Å›rodowiska GNOME.
 
 %prep
 %setup -q
